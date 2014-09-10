@@ -1,3 +1,6 @@
+//Tom Kobyluch
+//Program that outputs costs of a purchase
+
 public class Arithmetic{    //make new class
     public static void main(String[] args){ //main method, runs all code
     
