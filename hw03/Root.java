@@ -13,7 +13,7 @@ class Root{   //class setup
         double num = scan.nextDouble(); //store input as num
         double numcuberoot = Math.pow(num,(0.3333));    //raise num to the 1/3 power
         System.out.println("This is a crude cubed root of that number: " + numcuberoot);    //print out numcuberoot
-        System.out.println("This is that crude number cubed: "+ Math.pow(numcuberoot,3));   //print out numcuberoot to the 3rd power
+        System.out.println(numcuberoot+"*"+numcuberoot+"*"+numcuberoot+"="+ Math.pow(numcuberoot,3));   //print out numcuberoot to the 3rd power
         
     }
 }
