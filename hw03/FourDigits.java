@@ -30,6 +30,19 @@ class FourDigits{   //class setup
         System.out.println("The 4 digits are " + filler + finalnum);        //outputs the digits
         
         //Note: Advanced java method could probably have been used but this is the first way that popped into my head and works well
+       
+       
+        
+        /*I also accomplished the goal with Prof Chen suggestion using algebra. I prefer using my method as it is simpler to me.
+        
+        int dig1 = (int)(((num*10000)%10000)/1000);
+        int dig2 = (int)(((num*10000) - (dig1*1000) - ((int)num*10000))/100);
+        int dig3 = (int)((((num*10000) - (dig1*1000) - ((int)num*10000))-(dig2*100))/10);
+        int dig4 = (int)((((num*10000) - (dig1*1000) - ((int)num*10000))-(dig2*100)) - (dig3*10));
+        
+        System.out.println(dig1+"  "+dig2+"  "+dig3+"  "+dig4); 
+        */
+        
         
     }
 }
