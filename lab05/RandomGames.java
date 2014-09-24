@@ -14,43 +14,52 @@ class RandomGames{
         
         switch(gamechoice){
             case 'R': 
-            case 'r': int roulette = rand.nextInt(38);
-                      String roulettestr = Integer.toString(roulette);
-                      if(roulette==37){roulettestr="00";} ;    
-                      System.out.println("Roulette:"+roulettestr);
-            break;
-            
+            case 'r': 
+                int roulette = rand.nextInt(38);
+                String roulettestr = Integer.toString(roulette);
+                if(roulette==37){roulettestr="00";} ;    
+                System.out.println("Roulette:"+roulettestr);
+                break;
             case 'C': 
-            case 'c': int dice1 = rand.nextInt(6)+1; 
-                      int dice2 = rand.nextInt(6)+1; 
-                      System.out.println(dice1+" + "+dice2+ " = "+(dice1+dice2));
-                      break;
-            
+            case 'c': 
+                int dice1 = rand.nextInt(6)+1; 
+                int dice2 = rand.nextInt(6)+1; 
+                System.out.println(dice1+" + "+dice2+ " = "+(dice1+dice2));
+                break;
             case 'P': 
-            case 'p': int suite = rand.nextInt(4)+1;
-                      String namesuite = "";
-                      int cardnum = rand.nextInt(13)+2;
-                      String cardname = Integer.toString(cardnum);
-                      switch(cardnum){
-                                      case 11: cardname = "Jack";
-                                               break;
-                                      case 12: cardname = "Queen";
-                                               break;
-                                      case 13: cardname = "King";
-                                               break;
-                                      case 14: cardname = "Ace";
-                                               break;         
-                                  }
-                      switch(suite){
-                          case 1: namesuite = "Hearts";
-                                  break;
-                          case 2: namesuite = "Diamonds";   
-                                  break;
-                          case 3: namesuite = "Clubs";
-                                  break;
-                          case 4: namesuite = "Spades";
-                                  break;
-                      }
+            case 'p': 
+                int suite = rand.nextInt(4)+1;
+                String namesuite = "";
+                int cardnum = rand.nextInt(13)+2;
+                String cardname = Integer.toString(cardnum);
+                switch(cardnum){
+                    case 11: 
+                        cardname = "Jack";
+                        break;
+                    case 12: 
+                        cardname = "Queen";
+                        break;
+                    case 13: 
+                        cardname = "King";
+                        break;
+                    case 14:
+                        cardname = "Ace";
+                         break;         
+                }
+                switch(suite){
+                    case 1: 
+                        namesuite = "Hearts";
+                        break;
+                    case 2:
+                        namesuite = "Diamonds";   
+                        break;
+                    case 3: 
+                        namesuite = "Clubs";
+                        break;
+                    case 4: 
+                        namesuite = "Spades";
+                        break;
+                }
             System.out.println(cardname+" of "+namesuite);          
             break;
             
