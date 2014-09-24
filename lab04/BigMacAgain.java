@@ -8,26 +8,23 @@ class BigMacAgain{
         int numbigmacs = 0;
         double bigmacprice = 0.0;
         
-        System.out.println("How many Big Macs?:");
-        
         //for burgers
+        System.out.println("How many Big Macs?:");
         if(scan.hasNextInt()){
             numbigmacs = scan.nextInt(); 
             System.out.print("You ordered "+ numbigmacs); 
             bigmacprice = numbigmacs * 2.22; 
             System.out.printf(". Total cost of burgers is $%1.2f \n", bigmacprice);
-            
-        }
-        else{
+        }else{
             System.out.println("Error: You didn't enter an integer.");
             return;
         }
         
+        //for fries
         System.out.println("Would you like fries?");
         double total = bigmacprice + 2.15;
-        
-        //for fries
         char friesanswer = scan.next().charAt(0);
+        
         switch(friesanswer){
             
             case 'Y': System.out.println("Fries cost $2.15");
