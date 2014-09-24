@@ -11,7 +11,7 @@ class CourseNumber{
         
         Scanner scan = new Scanner(System.in);      //create new instance of scanner class
         
-        System.out.println("Enter a six digit number giving the course semester:");    //prompt user for input
+        System.out.println("Enter a six digit number giving the course semester (integer):");    //prompt user for input
         if(scan.hasNextInt()){//checks if int, then continues
             int coursenum = scan.nextInt();    //store input as var 
             if(coursenum <=201440 && coursenum>=186510){//checks if in range
