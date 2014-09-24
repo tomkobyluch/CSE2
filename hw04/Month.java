@@ -19,9 +19,11 @@ class Month{
                          break;
                 case 2:  System.out.println("Enter the year:");    //prompt user for input
                          if(scan.hasNextInt()){ // checks if year is int, then continues
-                         int year = scan.nextInt();    //store input as var 
-                         System.out.print("February has 28 days in the year " + year);//print out num days in month and inputted year
-                         break;
+                            int year = scan.nextInt();    //store input as var
+                            int days=28;//days in non leap year 
+                            if(year%4==0){days = 29;};//if leap year 28 days
+                            System.out.print("February has " +days+ " days");//print out num days in month and inputted year
+                            break;
                          }else{System.out.print("Not an integer");  //if year isnt int, it returns that message
                          break;}
                 case 3:  System.out.print("March has 31 days");//print out num days in month
