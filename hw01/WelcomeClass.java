@@ -13,6 +13,10 @@ public class WelcomeClass{
     System.out.println("\\"+" /"+"\\"+" /"+"\\"+" /"+"\\"+" /"+"\\"+" /"+"\\"+" /"+"\\"+" /");
     System.out.println(" v  v  v  v  v  v  v ");
     System.out.println("This summer I went to several" + "\n" +" beaches and played alot of airsoft.");
+    String x = "";
+    x+=40;
+    x+=40;
+    System.out.println(x);
     
     }
 }
