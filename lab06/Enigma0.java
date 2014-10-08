@@ -33,5 +33,8 @@ public class Enigma0{
 /* Error report:
  *   Expand this comment:
  *   Explain the error(s) that occurred here, and then fix them
+    
+    n was initialized inside if statement therfore not being able to be accessed by other statements. I initialized it outside if statement.
+ 
  */
 

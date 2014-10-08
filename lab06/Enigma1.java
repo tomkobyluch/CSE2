@@ -26,6 +26,7 @@ public class Enigma1{
  *        acceptable input don't produce the correct answer?
  * 
     Code only print out proportion remaining for 5 certain numbers, you have to make it work for all 99.
+    This code will store the left over proportion and then print that out as long as the user entered a percent between 0 and 100
  * 
  * 
  * 

@@ -1,10 +1,10 @@
 public class WelcomeClass{
     
 //  add main method
-    public static void main(String[] args){
+    public static void main(String arg[]){
         
 //  print displays welcome screen
-    System.out.println("     -----------");
+    /*System.out.println("     -----------");
     System.out.println("     | WELCOME |");
     System.out.println("     -----------");
     System.out.println(" ^  ^  ^  ^  ^  ^  ^");
@@ -16,7 +16,9 @@ public class WelcomeClass{
     String x = "";
     x+=40;
     x+=40;
-    System.out.println(x);
-    
+    System.out.println(x);*/
+    String x = 4 + 2 + "meaning of life";
+    x = (string)5;
+    System.out.println('b' > 'a');
     }
 }
