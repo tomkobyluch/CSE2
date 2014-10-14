@@ -3,7 +3,22 @@ import java.util.Scanner; //call scanner class
 class Root{ //declare class
     public static void main(String[] args){ //declare main method
         Scanner scan = new Scanner(System.in);  //creat ne instacne of scanner class
-        Double input = scan.nextDouble();   //store the inputted number from the scanner has input
+        
+        System.out.println("Enter a double and it's square root will be output. ");
+        
+        double input = 0;
+        
+        if(scan.hasNextDouble()){   //check double
+            input = scan.nextDouble();   //store the inputted number from the scanner has input
+            if(input<0){    //if negitive end program
+                System.out.println("Invalid: Negitive");    //If negitive output
+                return; // end program
+            }
+        }else{
+            System.out.println("Not double");   //output if not integer
+            return; //end program
+        }
+        
         
         double low = 0,high=1+input,middle=0;   //define initial variables that dont change based on loop
         
@@ -15,6 +30,6 @@ class Root{ //declare class
                 low = middle;   //if if statement false than low is set to middle
             }
         }
-        System.out.println("Low: "+low+"\nHigh: "+high+"\n[ "+low+" , "+high+ " ]");    //output low and high, should be close to one another.
+        System.out.println(middle);    //output low and high, should be close to one another.
     }
 }
