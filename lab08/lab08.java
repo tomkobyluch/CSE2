@@ -54,7 +54,7 @@ public class lab08{
         
 //COMMENT OUT THE ABOVE FIVE LINES AND REPLACE THE CODE
 //WITH A WHILE LOOP
-        int count=0;
+        /*int count=0;
         while(true){
             switch(n){
                 default: 
@@ -75,7 +75,7 @@ public class lab08{
         count++;
         if(count>10)
             break;
-        }
+        }*/
 //COMMENT OUT THE ABOVE 16 LINES AND REWRITE THE CODE USING
 // ONLY FOR LOOPS AND IF STATEMENS. BEFORE DOING SO, TRY
 //RUNNING THE CODE WITH VARIOUS INPUTTED VALUES, E.G.,
