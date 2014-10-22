@@ -11,6 +11,8 @@ class NumberStack{  //Create the class
     public static void main(String[] args){ //create main method
         Scanner scan = new Scanner(System.in);  //create new instance of scanner class
         
+        System.out.println("Enter number between 1 and 9: ");
+        
         if(scan.hasNextInt()){  //check if the input is an integer
             int input = scan.nextInt();     //store next integer as input
             if(input>0 && input <10){   //check if integer is in range between 1 and 9
