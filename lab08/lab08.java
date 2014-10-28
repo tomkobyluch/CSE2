@@ -12,8 +12,10 @@ public class lab08{
             System.out.print("You did not enter an int; try again");
         }*/
         do{
-            scan.next(); //get rid of the junk entered by user
-            System.out.print("You did not enter an int; try again");
+            if(scan.hasNextInt()==false){
+                scan.next(); //get rid of the junk entered by user
+                System.out.print("You did not enter an int; try again");
+            };
         }while(!scan.hasNextInt());
         
 //COMMENT OUT THE ABOVE 5 LINES AND REPLACE THE CODE WITH A
