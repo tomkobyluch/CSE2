@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.ArrayList;
+
 public class lab10{
     public static void main(String []  arg){
         int a=784,b=22,c;
@@ -41,5 +44,27 @@ public class lab10{
         int intc = Integer.parseInt(strc);
         return intc;
     }
+    
+    /*public static int join(int a, int b){
+        String stra = Integer.toString(a);
+
+        List <Integer> adig = new ArrayList <Integer>();
+        
+        while (a > 0) {
+            adig.add(a%10);
+            a = a / 10;
+        }
+        
+        
+        
+        int c = addDigit(b,adig.get(0));
+        System.out.println(c);
+        int d = addDigit(c,adig.get(1));
+        System.out.println(d);
+        int e = addDigit(d,adig.get(2));
+        System.out.println(e);
+        
+        return e;
+    }*/
     
 }  
