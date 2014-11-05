@@ -30,7 +30,7 @@ public class lab10{
         return a;
     }
     
-    public static int join(int a, int b){
+    /*public static int join(int a, int b){
         String stra = Integer.toString(a);
         String strb = Integer.toString(b);
         if(b < 0){
@@ -43,28 +43,27 @@ public class lab10{
         String strc = stra + strb;
         int intc = Integer.parseInt(strc);
         return intc;
-    }
+    }*/
     
-    /*public static int join(int a, int b){
+    public static int join(int a, int b){
         String stra = Integer.toString(a);
 
         List <Integer> adig = new ArrayList <Integer>();
-        
+        int numdig=0;
         while (a > 0) {
-            adig.add(a%10);
+            adig.add(a%10); //could add counter in here to get num digs for next loop
             a = a / 10;
+            numdig++;
         }
         
+        int n = 1;
+        int c=0;
+        while(n<=numdig){
+            c = addDigit(addDigit(b,adig.get(n)),(adig.get(n+1)));
+            n++;
+        }
         
-        
-        int c = addDigit(b,adig.get(0));
-        System.out.println(c);
-        int d = addDigit(c,adig.get(1));
-        System.out.println(d);
-        int e = addDigit(d,adig.get(2));
-        System.out.println(e);
-        
-        return e;
-    }*/
+        return c;
+    }
     
 }  
