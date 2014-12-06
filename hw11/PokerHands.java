@@ -1,7 +1,7 @@
 //Tom Kobyluch
 //12-5-12
-//HW11
-//This program gives user a random hand and tells what the hand type is. 
+//HW11 Poker Hands
+//This program gives user a random hand and tells what the hand type is. ---
 
 import java.util.Scanner;
 import java.util.Arrays;
@@ -48,6 +48,7 @@ public class PokerHands{
                 }
             }
         }
+        int wer = 0;
         int[][] userhandint = new int[5][2];
         for(int h = 0;h < 5;h++){               //create 2d array of hand with only ints
             userhandint[h][1] = ((int)userhand[h][1]-48);
