@@ -1,3 +1,8 @@
+//Tom Kobyluch
+//12-5-12
+//HW11
+//This program gives user a random hand and tells what the hand type is. 
+
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -47,7 +52,7 @@ public class PokerHands{
         for(int h = 0;h < 5;h++){               //create 2d array of hand with only ints
             userhandint[h][1] = ((int)userhand[h][1]-48);
             if(userhand[h][1] == 't'){
-                userhandint[h][1] = 10;
+                userhandint[h][1] = 10;         //if its letter card, had to use if statement to convert to int
             }
             if(userhand[h][1] == 'j'){
                 userhandint[h][1] = 11;
@@ -123,7 +128,7 @@ public class PokerHands{
         }
         
         if(fourofkind == true){
-            HandType = "Four of a kind";
+            HandType = "Four of a kind";        //make handtype what ever boolean is true
             return HandType;
         }
         if(fullhouse == true){
@@ -144,7 +149,7 @@ public class PokerHands{
         }
         if(straight == true && flush == true){
             HandType = "Straight flush";
-            if(straightcheck[0]==10 && straightcheck[1]==11 && straightcheck[2]==12 && straightcheck[3]==13 && straightcheck[4]==14){
+            if(straightcheck[0]==10 && straightcheck[1]==11 && straightcheck[2]==12 && straightcheck[3]==13 && straightcheck[4]==14){       
                 HandType = "Royal Flush";
             }
             return HandType;
@@ -161,7 +166,7 @@ public class PokerHands{
         return HandType;
     }
     
-    public static boolean twoDimensionalDupeCheck(char suite,char value,char[][] userhand,int currentposition){
+    public static boolean twoDimensionalDupeCheck(char suite,char value,char[][] userhand,int currentposition){     //checks if there is a duped card
         for(int i = 0;i<5;i++){
             if(i != currentposition && suite == userhand[i][0] && value == userhand[i][1]){
                 System.out.println("Already have that card, try again");
